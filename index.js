@@ -68,3 +68,5 @@ console("data types of JS - summary");
 console.log("Stack and Heap memory in JS");
 // Primitive type - Stack memory
 // Reference type - Heap memory
+
+// stack ke ander stored hue variable ka copy milta hai and heap ke andar stored hue variable ka reference millta hai
