@@ -56,7 +56,7 @@ console.log(undefined == 0); // false ... undefined ka hr comparison me false
 // TS ye sb allow hi nhi krta to ye sb bakchodi hi nhi
 
 // video - 9
-console("data types of JS - summary");
+console.log("data types of JS - summary");
 
 // Primitive -> 7 types (call by value): String, Number, Boolean, null, undefined, Symbol, BigInt
 // Reference -> Array, Objects, Functions
@@ -70,3 +70,58 @@ console.log("Stack and Heap memory in JS");
 // Reference type - Heap memory
 
 // stack ke ander stored hue variable ka copy milta hai and heap ke andar stored hue variable ka reference millta hai
+
+// video - 11
+console.log("String");
+
+const name1 = "Deepanshu";
+
+const name2 = new String("Deepanshu"); // check its console log
+console.log(name1.__proto__);
+// same as
+console.log(name2.__proto__);
+
+console.log(name1.charAt(3));
+console.log(name1.indexOf('p'));
+console.log("substring and substr are 2 different methods");
+
+// video - 12
+console.log("Maths and Numbers");
+const num = new Number(34.6);
+
+console.log(num);
+console.log(num.toFixed());
+// imp --- toPrecision --- returns string
+const otherNum = 123.4986
+console.log(otherNum.toPrecision(7));
+console.log(typeof otherNum.toPrecision(7));
+// number me coma chahiye to localeString use kro
+const hundreds = 10000000;
+console.log(hundreds.toLocaleString()); // USA waala
+console.log(hundreds.toLocaleString('en-IN')); // Ind waala
+
+const maxSafeInterger = Number.MAX_SAFE_INTEGER;
+const minSafeInterger = Number.MIN_SAFE_INTEGER;
+console.log(minSafeInterger, maxSafeInterger);
+
+// video - 13
+console.log("Date and time in depth");
+console.log(`Date is stored in ms in JS and sarting from 1 Jan 1970`);
+const myDate = new Date();
+console.log(typeof myDate); // Object
+// year, month, date, hh, mm, ss
+let createdDate = new Date(2026, 0, 8);
+createdDate = new Date(2026, 0, 8, 3, 5, 87);
+
+// video - 14 & 15 Array
+console.log("Array");
+console.log("slice, splice");
+
+console.log(Array.from("Deepanshu"));
+console.log(Array.from({name: "Deepanshu"}));
+
+console.log(Array.of(name1, name2, points, points2, null));
+
+// video - 16, 17,18 Object
+// console.log("Objects");
+// 
