@@ -123,5 +123,64 @@ console.log(Array.from({name: "Deepanshu"}));
 console.log(Array.of(name1, name2, points, points2, null));
 
 // video - 16, 17,18 Object
-// console.log("Objects");
-// 
+console.log("Objects --- bookmarked"); 
+// singleton // reated using constructor
+
+// object literals
+
+const mySymbol = Symbol("key1");
+const mySymbol2 = Symbol("key2");
+
+const obj1 = {
+    name: "Chai",
+    "full name": "Chai aur code",
+    location: "Gurgaon",
+    email: "deepanshunarang@gmail.com",
+    isLoggedIn: true,
+    mySymbol: "myKey1", // aise likhenge to ye string ki trha access hoga... to access it as a symbol wrap it inside square brackets.... log krte hue bhi obj1[mySymbol]
+    [mySymbol2]: "my key 2 symbol"
+};
+console.log(obj1["full name"]);
+console.log(obj1.mySymbol);
+console.log(obj1[mySymbol2]);
+
+obj1.email = "narangdeepanshu@gmail.com";
+// Object.freeze(obj1); // neither can change value of keys nor can add any key-value pairs
+obj1.location  = "Bangalore";
+obj1.sec_location = "jaipur";
+
+obj1.greet = function(){
+    console.log("hello user");
+}
+
+console.log(obj1); // check for mySymbol and mySymbol2
+
+const singletonObj = new Object();
+
+const hingeUser = new Object();
+hingeUser.id = "sg404";
+hingeUser.name = "Shagun";
+hingeUser.isLoggedIn = false;
+
+console.log(hingeUser);
+
+// video - 19, 20 Functions
+console.log("Fucntions");
+
+// video - 21, 22 - Scope
+console.log("Scope");
+
+// video - 23 
+console.log("this");
+
+// video - 24
+console.log("IIFE");
+
+(function chai(){
+    console.log("chai");
+})();
+
+((x) => console.log(x))(123);
+
+// video - 25
+console.log("JS Execution context");
