@@ -184,3 +184,21 @@ console.log("IIFE");
 
 // video - 25
 console.log("JS Execution context");
+
+// video -  26
+console.log("control flow in JS 1 shot");
+
+// imp for interviews (if unterviewer is a lil stupid)
+console.log(0 == false);
+console.log("" == 0);
+console.log(false == "");
+
+
+let arr = 0;
+const myArr = ['a', 'b', 'c'];
+while(arr < myArr.length){
+    console.log(myArr[++arr]);
+}
+
+// video - 27, 28, 29, 30
+console.log("Loops");
